@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+:root {
+  --bg-color: #335d2d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*-- Layers image --*/
+#layer_01 {
+  background-image: url(../images/3.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+#layer_03 {
+  background-image: url(../images/2.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+#layer_04 {
+  background-image: url(../images/1.svg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+
+/*-- Parallax --*/
+.parallax {
+  height: 100vh;
+}
+
+.parallax.parallax__container {
+  position: relative;
+}
+
+.parallax.parallax__layer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.parallax.parallax__item {
+  position: fixed;
+}
+
+/*-- Page content --*/
+.page.page__content {
+  position: relative;
+  background-color: #253335;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page.page__title {
+  color: #fff;
+  font-size: 3em;
+  font-family: "Inter", sans-serif;
+}
